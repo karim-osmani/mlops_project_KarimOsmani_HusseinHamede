@@ -1,0 +1,15 @@
+data_loader:
+ file_path: "C:/Users/Karim/Documents/USJ/software eng/project/data/iphone.csv"
+ file_type: "csv"
+
+transformation:
+ normalize: true
+ scaling_method: "standard" # Options: "standard", "minmax"
+
+model:
+  type: "random_forest"
+  random_state: 42
+
+text_column: "lemmatized_reviewDescription"
+numeric_columns: ["word_count", "char_count", "sentiment", "any_neg"]
+target_column: "ratingScore"
