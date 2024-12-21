@@ -11,23 +11,21 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-  - name: Checkout code
-    uses: actions/checkout@v4
+      - name: Project Setup
+        uses: ./.github/actions/setup
 
-  - name: Project Setup
-    uses: ./.github/actions/setup
+      - name: Install Dependencies
+        run: poetry install
 
-  - name: Install Dependencies
-    run: poetry install
+      - name: Run Tests
+        run: poetry run invoke test
 
-  - name: Run Tests
-    run: poetry run invoke test
+      - name: Run Linting
+        run: poetry run invoke lint
 
-  - name: Run Linting
-    run: poetry run invoke lint
-
-  - name: Run Typing Checks
-    run: poetry run invoke type
+      - name: Run Typing Checks
+        run: poetry run invoke type
