@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ml-project"
+version = "0.1.0"
+description = ""
+authors = ["karim-osmani <karimosmani10@gmail.com>"]
+readme = "README.md"
+packages = [{include = "ml_project", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.3"
+numpy = "^2.2.1"
+scikit-learn = "^1.6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
