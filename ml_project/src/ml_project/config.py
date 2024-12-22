@@ -20,8 +20,7 @@ class TransformationConfig(BaseModel):
 class Config(BaseModel):
  data_loader: DataLoaderConfig
  transformation: TransformationConfig
-def load_config() -> Config:
- config_path = os.path.join(os.path.dirname(__file__), "config.yaml")
+def load_config(config_path: str) -> Config:
  raw_config = OmegaConf.load(config_path)
  config_dict = OmegaConf.to_container(raw_config, resolve=True)
  return Config(**config_dict)

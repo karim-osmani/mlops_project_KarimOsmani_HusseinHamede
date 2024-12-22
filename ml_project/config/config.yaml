@@ -5,3 +5,4 @@ data_loader:
 transformation:
  normalize: true
  scaling_method: "standard" # Options: "standard", "minmax"
+ 
