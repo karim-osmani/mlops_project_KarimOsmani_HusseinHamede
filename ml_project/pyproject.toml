@@ -13,12 +13,15 @@ numpy = "^2.2.1"
 scikit-learn = "^1.6.0"
 omegaconf = "^2.3.0"
 pydantic = "^2.10.4"
+loguru = "^0.7.3"
 
 
 [tool.poetry.group.dev.dependencies]
 pdoc = "^15.0.1"
 mypy = "^1.14.0"
 ruff = "^0.8.4"
+pytest = "^8.3.4"
+invoke = "^2.2.0"
 
 [build-system]
 requires = ["poetry-core"]

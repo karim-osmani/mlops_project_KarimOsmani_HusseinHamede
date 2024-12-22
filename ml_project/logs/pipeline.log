@@ -1,0 +1,10 @@
+2024-12-22 18:27:21.616 | ERROR    | ml_project.main:main:27 - Failed to load configuration: 3 validation errors for Config
+text_column
+  Field required [type=missing, input_value={'data_loader': {'file_pa...ling_method': 'minmax'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+numeric_columns
+  Field required [type=missing, input_value={'data_loader': {'file_pa...ling_method': 'minmax'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+target_column
+  Field required [type=missing, input_value={'data_loader': {'file_pa...ling_method': 'minmax'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
