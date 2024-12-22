@@ -11,8 +11,13 @@ python = "^3.11"
 pandas = "^2.2.3"
 numpy = "^2.2.1"
 scikit-learn = "^1.6.0"
+omegaconf = "^2.3.0"
+pydantic = "^2.10.4"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+ml_project_ = "ml_project.main:main"
