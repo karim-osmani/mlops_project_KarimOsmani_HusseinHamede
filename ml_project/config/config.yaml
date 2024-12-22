@@ -5,4 +5,11 @@ data_loader:
 transformation:
  normalize: true
  scaling_method: "standard" # Options: "standard", "minmax"
- 
+
+model:
+  type: "random_forest"
+  random_state: 42
+
+text_column: "lemmatized_reviewDescription"
+numeric_columns: ["word_count", "char_count", "sentiment", "any_neg"]
+target_column: "ratingScore"
