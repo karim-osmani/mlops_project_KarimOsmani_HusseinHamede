@@ -1,5 +1,5 @@
 data_loader:
- file_path: "C:/Users/Karim/Documents/USJ/software eng/project/data/iphone.csv"
+ file_path: "D:/AData science/USJ/S3/software/project/data/iphone.csv"
  file_type: "csv"
 transformation:
  normalize: false

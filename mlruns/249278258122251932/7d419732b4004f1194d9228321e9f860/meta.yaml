@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/AData science/USJ/S3/software/project/mlruns/249278258122251932/7d419732b4004f1194d9228321e9f860/artifacts
+end_time: 1734935463892
+entry_point_name: ''
+experiment_id: '249278258122251932'
+lifecycle_stage: active
+run_id: 7d419732b4004f1194d9228321e9f860
+run_name: rare-cod-574
+run_uuid: 7d419732b4004f1194d9228321e9f860
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734935454368
+status: 3
+tags: []
+user_id: pc

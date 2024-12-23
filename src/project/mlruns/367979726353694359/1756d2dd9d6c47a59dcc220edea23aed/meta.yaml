@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/AData%20science/USJ/S3/software/project/src/project/mlruns/367979726353694359/1756d2dd9d6c47a59dcc220edea23aed/artifacts
+end_time: 1734933099332
+entry_point_name: ''
+experiment_id: '367979726353694359'
+lifecycle_stage: active
+run_id: 1756d2dd9d6c47a59dcc220edea23aed
+run_name: able-sloth-969
+run_uuid: 1756d2dd9d6c47a59dcc220edea23aed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734933084101
+status: 3
+tags: []
+user_id: pc
