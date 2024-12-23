@@ -1,0 +1,11 @@
+groups:
+  - name: ML Alerts
+    rules:
+      - alert: LowModelAccuracy
+        expr: model_accuracy < 0.6
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Model accuracy is too low!"
+          description: "The model accuracy is currently {{ $value }} which is below the threshold of 0.6."

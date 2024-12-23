@@ -1,0 +1,15 @@
+global:
+  scrape_interval: 15s # Scrape targets every 15 seconds.
+  evaluation_interval: 15s # Evaluate rules every 15 seconds.
+
+scrape_configs:
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["localhost:9090"]  # Monitor Prometheus itself
+
+  - job_name: "ml_pipeline_metrics"
+    static_configs:
+      - targets: ["localhost:8000"]  # Endpoint for your Python app
+
+rule_files:
+  - "alert.rules.yml"
